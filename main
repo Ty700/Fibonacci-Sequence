@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int Fibonacci(int n) {
+   int result = 0;
+   int temp = 0;
+   int tem2 = 1;
+   if(n == 0){
+      return n;
+   } else if (n == 0){
+    return n;  
+   }
+   if(n < 0){
+      return -1;
+      }
+   for(int i = 2; i <= n; i++){
+      result = temp + tem2;
+      temp = tem2;
+      tem2 = result;
+   }
+  return result;
+}
+
+int main() {
+   int startNum;
+   cout << "Enter in an integer:\n";
+   cin >> startNum;
+   cout << "Fibonacci(" << startNum << ") is " << Fibonacci(startNum) << endl;
+
+   return 0;
+}
