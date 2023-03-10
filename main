@@ -8,7 +8,7 @@ int Fibonacci(int n) {
    int tem2 = 1;
    if(n == 0){
       return n;
-   } else if (n == 0){
+   } else if (n == 1){
     return n;  
    }
    if(n < 0){
